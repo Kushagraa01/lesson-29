@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity 1</title>
+</head>
+<body>
+    <h2>JSON </h2>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        var obj={name:"Ali",grade:1}
+        var JSONObj=JSON.stringify(obj);
+        var RecObj=JSON.parse(JSONObj);
+        document.getElementById("p1").innerHTML=RecObj.name;
+        document.getElementById("p2").innerHTML = RecObj["grade"];
+    </script>
+    </body>
+</html>
